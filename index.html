@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title> HAND GESTURE APP </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+  </head>
+
+  <body>
+  <div class="container">
+      <center>
+        <h1 class="btn btn-warning heading" style="font-size: 25px; border-radius: 15px; letter-spacing: 3px; width: 50%; color: white;"> HAND GESTURE APP
+            <br>
+                    <span>&#9996;</span>
+                    <span>&#128076;</span>
+                    <span>&#128077;</span>
+                    <span>&#128078;</span>
+                    <span>&#128400;</span>
+                    <span>&#129304;</span>
+                  </h1>
+            
+                  <br><br>
+
+                  <h1 style="color: white;">Take a selfie of a gesture to know about it's meaning </h1>
+                  <h2 style="color: white;">On the following gestures the model is trained - </h2>
+
+                  <div id="emoji_tobeidentified">
+                  <span>&#128076;</span> | <span>&#128077;</span> | <span>&#9996;</span>
+                </div>
+
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label style="font-size: 23px; color: white;"> Webcam View </label>
+                    <div id="camera"></div>
+                    <br>
+                    <button onclick="take_snapshot()" class="btn btn-success button" style="color: white;">Take Snapshot</button>
+                    
+                          </div>
+                    
+                          <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label style="font-size: 23px; color: white;">Prediction </label>
+                    <p class="result1" id="emotion1"></p>
+                    <p class= "result2" id="emoji1"></p>
+                          </div>
+                    
+                          <div class="col-md-4 col-sm-12 col-xs-12">
+                              <label style="font-size: 23px; color: white;">Snapshot </label>
+                            <div id="captured_img"></div>
+                            <br>
+                            <button onclick="Captured_picture()" class="btn btn-success button" style="color: white;">Identify </button>
+                    
+                          </div>
+                    
+
+
+
+                            </center>
+                            </div>
+                            <script src="main.js"></script>
+                           </body>
+                           </html>
